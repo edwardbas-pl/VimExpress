@@ -6,19 +6,19 @@ if [[ ! -f /usr/bin/vim ]]
 then
 	if [[ -f /usr/bin/apt ]]
 	then
-		sudo apt update && sudo apt install vim  wget -y	
+		sudo apt update && sudo apt install vim  nodejs wget -y	
 	fi	
 	if [[ -f /usr/bin/pacman ]]
 	then
-		sudo pacman -Sy vim wget --noconfirm
+		sudo pacman -Sy vim wget nodejs --noconfirm
 	fi	
 	if [[ -f /usr/bin/dnf ]]
 	then
-		sudo dnf update && sudo dnf install vim wget -y
+		sudo dnf update && sudo dnf install vim nodejs wget -y
 	fi	
 	if [[ -f /usr/bin/dnf ]]
 	then
-		sudo zypper --non-interactive install vim wget
+		sudo zypper --non-interactive install vim wget nodejs 
 	fi	
 
 fi
